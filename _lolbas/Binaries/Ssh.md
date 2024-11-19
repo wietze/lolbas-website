@@ -5,7 +5,7 @@ Author: Akshat Pradhan
 Created: 2021-11-08
 Commands:
   - Command: ssh localhost "{CMD}"
-    Description: Execute calc.exe on host machine. The prompt for password can be eliminated by adding the host's public key in the user's authorized_keys file. Adversaries can do the same for execution on remote machines.
+    Description: Executes specified command on host machine. The prompt for password can be eliminated by adding the host's public key in the user's authorized_keys file. Adversaries can do the same for execution on remote machines.
     Usecase: Execute specified command, can be used for defense evasion.
     Category: Execute
     Privileges: User
@@ -14,7 +14,7 @@ Commands:
     Tags:
       - Execute: CMD
   - Command: ssh -o ProxyCommand="{CMD}" .
-    Description: Executes calc.exe from ssh.exe
+    Description: Executes specified command from ssh.exe
     Usecase: Performs execution of specified file, can be used as a defensive evasion.
     Category: Execute
     Privileges: User

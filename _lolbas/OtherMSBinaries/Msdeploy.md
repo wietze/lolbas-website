@@ -22,7 +22,7 @@ Commands:
     OperatingSystem: Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11, Windows Server
     Tags:
       - Execute: CMD
-  - Command: msdeploy.exe -verb:sync -source:filePath=C:\windows\system32\calc.exe -dest:filePath=C:\Users\Public\calc.exe
+  - Command: msdeploy.exe -verb:sync -source:filePath={PATH_ABSOLUTE:.source.ext} -dest:filePath={PATH_ABSOLUTE:.dest.ext}
     Description: Copy file from source to destination.
     Usecase: Copy file.
     Category: Copy

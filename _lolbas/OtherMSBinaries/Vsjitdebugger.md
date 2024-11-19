@@ -5,7 +5,7 @@ Author: Oddvar Moe
 Created: 2018-05-25
 Commands:
   - Command: Vsjitdebugger.exe {PATH:.exe}
-    Description: Executes calc.exe as a subprocess of Vsjitdebugger.exe.
+    Description: Executes specified executable as a subprocess of Vsjitdebugger.exe.
     Usecase: Execution of local PE file as a subprocess of Vsjitdebugger.exe.
     Category: Execute
     Privileges: User

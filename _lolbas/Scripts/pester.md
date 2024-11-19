@@ -14,7 +14,7 @@ Commands:
     Tags:
       - Execute: EXE
   - Command: Pester.bat ;{PATH:.exe}
-    Description: Execute code using Pester. Example here executes calc.exe
+    Description: Execute code using Pester. Example here executes specified executable.
     Usecase: Proxy execution
     Category: Execute
     Privileges: User

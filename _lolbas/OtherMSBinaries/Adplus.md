@@ -27,7 +27,7 @@ Commands:
     Privileges: SYSTEM
     MitreID: T1003.001
     OperatingSystem: All Windows
-  - Command: adplus.exe -crash -o "C:\temp\" -sc calc.exe
+  - Command: adplus.exe -crash -o "{PATH_ABSOLUTE:folder}" -sc {PATH:.exe}
     Description: Execute arbitrary commands and binaries from the context of adplus. Note that providing an output directory via '-o' is required.
     Usecase: Run commands under a trusted Microsoft signed binary
     Category: Execute

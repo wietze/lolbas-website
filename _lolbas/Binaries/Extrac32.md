@@ -29,8 +29,8 @@ Commands:
     Privileges: User
     MitreID: T1105
     OperatingSystem: Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11
-  - Command: extrac32.exe /C {PATH_ABSOLUTE:.exe} C:\Users\user\Desktop\program.exe
-    Description: Command for copying calc.exe to another folder
+  - Command: extrac32.exe /C {PATH_ABSOLUTE:.source.exe} {PATH_ABSOLUTE:.dest.exe}
+    Description: Command for copying file from one folder to another
     Usecase: Copy file
     Category: Copy
     Privileges: User

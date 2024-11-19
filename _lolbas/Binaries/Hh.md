@@ -15,7 +15,7 @@ Commands:
       - Execute: EXE
       - Application: GUI
   - Command: HH.exe {PATH_ABSOLUTE:.exe}
-    Description: Executes calc.exe with HTML Help.
+    Description: Executes cexecutable via HTML Help.
     Usecase: Execute process with HH.exe
     Category: Execute
     Privileges: User

@@ -5,7 +5,7 @@ Author: Oddvar Moe
 Created: 2018-05-25
 Commands:
   - Command: forfiles /p c:\windows\system32 /m notepad.exe /c "{CMD}"
-    Description: Executes calc.exe since there is a match for notepad.exe in the c:\windows\System32 folder.
+    Description: Executes specified command since there is a match for notepad.exe in the c:\windows\System32 folder.
     Usecase: Use forfiles to start a new process to evade defensive counter measures
     Category: Execute
     Privileges: User

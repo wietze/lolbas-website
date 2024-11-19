@@ -5,7 +5,7 @@ Author: Jai Minton
 Created: 2020-06-24
 Commands:
   - Command: explorer.exe /root,"{PATH_ABSOLUTE:.exe}"
-    Description: Execute calc.exe with the parent process spawning from a new instance of explorer.exe
+    Description: Execute specified .exe with the parent process spawning from a new instance of explorer.exe
     Usecase: Performs execution of specified file with explorer parent process breaking the process tree, can be used for defense evasion.
     Category: Execute
     Privileges: User
