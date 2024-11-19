@@ -4,13 +4,15 @@ Description: Console Window host for Windows Terminal
 Author: Nasreddine Bencherchali
 Created: 2022-06-17
 Commands:
-  - Command: "OpenConsole.exe calc"
-    Description: Execute calc with OpenConsole.exe as parent process
+  - Command: OpenConsole.exe {PATH:.exe}
+    Description: Execute specified process with OpenConsole.exe as parent process
     Usecase: Use OpenConsole.exe as a proxy binary to evade defensive counter-measures
     Category: Execute
     Privileges: User
     MitreID: T1202
     OperatingSystem: Windows 10, Windows 11
+    Tags:
+      - Execute: EXE
 Full_Path:
   - Path: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\Terminal\ServiceHub\os64\OpenConsole.exe
   - Path: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\Terminal\ServiceHub\os86\OpenConsole.exe

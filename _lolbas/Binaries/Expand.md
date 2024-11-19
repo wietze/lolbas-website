@@ -1,7 +1,7 @@
 ---
 Name: Expand.exe
 Description: Binary that expands one or more compressed files
-Author: 'Oddvar Moe'
+Author: Oddvar Moe
 Created: 2018-05-25
 Commands:
   - Command: expand \\webdav\folder\file.bat c:\ADS\file.bat

@@ -4,21 +4,23 @@ Description: Debugging tool included with Windows Debugging Tools
 Author: mr.d0x
 Created: 2021-09-01
 Commands:
-  - Command: adplus.exe -hang -pn lsass.exe -o c:\users\mr.d0x\output\folder -quiet
+  - Command: adplus.exe -hang -pn lsass.exe -o {PATH_ABSOLUTE:folder} -quiet
     Description: Creates a memory dump of the lsass process
     Usecase: Create memory dump and parse it offline
     Category: Dump
     Privileges: SYSTEM
     MitreID: T1003.001
     OperatingSystem: All Windows
-  - Command: adplus.exe -c config-adplus.xml
+  - Command: adplus.exe -c {PATH:.xml}
     Description: Execute arbitrary commands using adplus config file (see Resources section for a sample file).
     Usecase: Run commands under a trusted Microsoft signed binary
     Category: Execute
     Privileges: User
     MitreID: T1127
     OperatingSystem: All Windows
-  - Command: adplus.exe -c config-adplus.xml
+    Tags:
+      - Execute: CMD
+  - Command: adplus.exe -c {PATH:.xml}
     Description: Dump process memory using adplus config file (see Resources section for a sample file).
     Usecase: Run commands under a trusted Microsoft signed binary
     Category: Dump
@@ -32,6 +34,9 @@ Commands:
     Privileges: User
     MitreID: T1127
     OperatingSystem: All windows
+    Tags:
+      - Execute: CMD
+      - Execute: EXE
 Full_Path:
   - Path: C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\adplus.exe
   - Path: C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\adplus.exe

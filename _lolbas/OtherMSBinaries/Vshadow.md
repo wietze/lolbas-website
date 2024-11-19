@@ -4,13 +4,15 @@ Description: VShadow is a command-line tool that can be used to create and manag
 Author: Ayberk Halaç
 Created: 2023-09-06
 Commands:
-  - Command: 'vshadow.exe -nw -exec=c:\windows\system32\calc.exe C:'
-    Description: Executes calc.exe from vshadow.exe.
+  - Command: 'vshadow.exe -nw -exec={PATH_ABSOLUTE:.exe} C:'
+    Description: Executes specified executable from vshadow.exe.
     Usecase: Performs execution of specified executable file.
     Category: Execute
     Privileges: Administrator
     MitreID: T1127
     OperatingSystem: Windows 10, Windows 11
+    Tags:
+      - Execute: EXE
 Full_Path:
   - Path: C:\Program Files (x86)\Windows Kits\10\bin\<version>\x64\vshadow.exe
 Detection:
