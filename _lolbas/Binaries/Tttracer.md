@@ -5,7 +5,7 @@ Author: Oddvar Moe
 Created: 2019-11-05
 Commands:
   - Command: tttracer.exe {PATH_ABSOLUTE:.exe}
-    Description: Execute calc using tttracer.exe. Requires administrator privileges
+    Description: Execute specified executable from tttracer.exe. Requires administrator privileges.
     Usecase: Spawn process using other binary
     Category: Execute
     Privileges: Administrator

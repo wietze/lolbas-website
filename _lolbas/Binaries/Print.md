@@ -12,7 +12,7 @@ Commands:
     MitreID: T1564.004
     OperatingSystem: Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11
   - Command: print /D:{PATH_ABSOLUTE:.dest.exe} {PATH_ABSOLUTE:.source.exe}
-    Description: Copy FileToCopy.exe to the target C:\ADS\CopyOfFile.exe
+    Description: Copy file from source to destination
     Usecase: Copy files
     Category: Copy
     Privileges: User

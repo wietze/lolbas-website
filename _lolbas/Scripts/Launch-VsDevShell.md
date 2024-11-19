@@ -4,7 +4,7 @@ Description: Locates and imports a Developer PowerShell module and calls the Ent
 Author: 'Nasreddine Bencherchali'
 Created: 2022-06-13
 Commands:
-  - Command: 'powershell -ep RemoteSigned -f .\Launch-VsDevShell.ps1 -VsWherePath {PATH_ABSOLUTE:exe}'
+  - Command: 'powershell -ep RemoteSigned -f .\Launch-VsDevShell.ps1 -VsWherePath {PATH_ABSOLUTE:.exe}'
     Description: Execute binaries from the context of the signed script using the "VsWherePath" flag.
     Usecase: Proxy execution
     Category: Execute

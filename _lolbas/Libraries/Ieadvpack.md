@@ -4,7 +4,7 @@ Description: INF installer for Internet Explorer. Has much of the same functiona
 Author: LOLBAS Team
 Created: 2018-05-25
 Commands:
-  - Command: rundll32.exe ieadvpack.dll,LaunchINFSection {PATH_ABSOLUTE:inf},DefaultInstall_SingleUser,1,
+  - Command: rundll32.exe ieadvpack.dll,LaunchINFSection {PATH_ABSOLUTE:.inf},DefaultInstall_SingleUser,1,
     Description: Execute the specified (local or remote) .wsh/.sct script with scrobj.dll in the .inf file by calling an information file directive (section name specified).
     Usecase: Run local or remote script(let) code through INF file specification.
     Category: AWL Bypass
@@ -13,7 +13,7 @@ Commands:
     OperatingSystem: Windows 10, Windows 11
     Tags:
       - Execute: INF
-  - Command: rundll32.exe ieadvpack.dll,LaunchINFSection {PATH_ABSOLUTE:inf},,1,
+  - Command: rundll32.exe ieadvpack.dll,LaunchINFSection {PATH_ABSOLUTE:.inf},,1,
     Description: Execute the specified (local or remote) .wsh/.sct script with scrobj.dll in the .inf file by calling an information file directive (DefaultInstall section implied).
     Usecase: Run local or remote script(let) code through INF file specification.
     Category: AWL Bypass

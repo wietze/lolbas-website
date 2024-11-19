@@ -6,7 +6,7 @@ Created: 2018-05-25
 Commands:
   - Command: AppVLP.exe {PATH_SMB:.bat}
     Usecase: Execution of BAT file hosted on Webdav server.
-    Description: Executes calc.bat through AppVLP.exe
+    Description: Executes .bat file through AppVLP.exe
     Category: Execute
     Privileges: User
     MitreID: T1218

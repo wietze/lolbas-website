@@ -5,7 +5,7 @@ Author: Oddvar Moe
 Created: 2018-05-25
 Commands:
   - Command: msdeploy.exe -verb:sync -source:RunCommand -dest:runCommand="{PATH_ABSOLUTE:.bat}"
-    Description: Launch calc.bat via msdeploy.exe.
+    Description: Launch .bat file via msdeploy.exe.
     Usecase: Local execution of batch file using msdeploy.exe.
     Category: Execute
     Privileges: User
@@ -14,7 +14,7 @@ Commands:
     Tags:
       - Execute: CMD
   - Command: msdeploy.exe -verb:sync -source:RunCommand -dest:runCommand="{PATH_ABSOLUTE:.bat}"
-    Description: Launch calc.bat via msdeploy.exe.
+    Description: Launch .bat file via msdeploy.exe.
     Usecase: Local execution of batch file using msdeploy.exe.
     Category: AWL Bypass
     Privileges: User

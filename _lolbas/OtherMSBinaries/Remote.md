@@ -5,7 +5,7 @@ Author: mr.d0x
 Created: 2021-06-01
 Commands:
   - Command: Remote.exe /s {PATH:.exe} anythinghere
-    Description: Spawns powershell as a child process of remote.exe
+    Description: Spawns specified executable as a child process of remote.exe
     Usecase: Executes a process under a trusted Microsoft signed binary
     Category: AWL Bypass
     Privileges: User
@@ -14,7 +14,7 @@ Commands:
     Tags:
       - Execute: EXE
   - Command: Remote.exe /s {PATH:.exe} anythinghere
-    Description: Spawns powershell as a child process of remote.exe
+    Description: Spawns specified executable as a child process of remote.exe
     Usecase: Executes a process under a trusted Microsoft signed binary
     Category: Execute
     Privileges: User
